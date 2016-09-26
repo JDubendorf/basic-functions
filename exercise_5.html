@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Functions! (Five)</title>
+</head>
+<body>
+	<script>
+		var sum = 0;
+		var number = 0;
+
+		function addToAverage(num) {
+			sum = sum + num;
+			number = number + 1;
+		}
+
+		function getAverage() {
+			return sum / number;
+		}
+
+		addToAverage(13);
+		addToAverage(4);
+		addToAverage(134);
+		addToAverage(21);
+		addToAverage(30);
+
+		console.log(getAverage());  //40.4
+
+		arr = [10, 12, 56, 176];
+		var sumArr = 0;
+		var aveArr;
+
+		function arrToAve(arr) {
+			for (i = 0; i < arr.length; i ++) {
+				sumArr = sumArr + arr[i];
+			}
+			aveArr = sumArr / arr.length; 
+			return aveArr;
+		}
+
+		console.log(arrToAve(arr));
+
+		/*
+			Optional: Create a function which averages an array of numbers
+			Optional: Create a variadic function which averages all of its arguments
+		*/
+
+	</script>
+</body>
+</html>
